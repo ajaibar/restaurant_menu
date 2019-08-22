@@ -1,0 +1,13 @@
+def pendulum(values):
+    mylist=[]
+    mylist2=[]
+    for num in values:
+        mylist.append(num)
+        mylist.sort()
+        
+    for index in range (0,len(mylist)):
+        if index %2 == 0 or index == 0:
+                mylist2.insert(0,mylist[index])
+        else:
+                mylist2.append(mylist[index])
+    return (mylist2)
