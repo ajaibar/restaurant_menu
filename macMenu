@@ -1,0 +1,64 @@
+def macDonald():
+    cheeseburger = 7.99
+    french_fries = 2.00
+    nuggets = 4.89
+    soda = 1.69
+    apple_slices = 0.99
+    milk_shake = 3.99
+
+    print('''
+    Please use this menu to select 
+    
+    For example, enter A for Cheeseburger
+    +---------------------------------------+
+    |       MacDonald's Menu                |  
+    +---------------------------------------+
+    |A\tCheeseburger          |$''', str(cheeseburger),'''      |
+    +---------------------------------------+
+    |B\tFrench Fries          |$''', str(french_fries),'''       |
+    +---------------------------------------+
+    |C\tChicken Nuggets       |$''', str(nuggets),'''      |
+    +---------------------------------------+
+    |D\tSoda                  |$''', str(soda),'''      |
+    +---------------------------------------+
+    |E\tApple Slices          |$''', str(apple_slices),'''      |
+    +---------------------------------------+
+    |E\tMilk Shake            |$''', str(milk_shake),'''      |
+    +---------------------------------------+
+    
+    ''')
+    select = ''
+    subtotal = 0
+    while select != 'X' or select !='x':
+        select = input (str('Please enter the letter associated with the item:\nEnter X to exit!'))
+        if select == 'A' or select =='a':
+            subtotal = subtotal + cheeseburger
+            print('Your subtotal is: ',subtotal)
+            
+        elif select == 'B'or select =='b':
+            subtotal = subtotal + french_fries
+            print('Your subtotal is: ',subtotal)
+            
+        elif select == 'C' or select =='c':
+            subtotal = subtotal + nuggets
+            print('Your subtotal is: ',subtotal)
+            
+        elif select == 'D' or select =='d':
+            subtotal = subtotal + soda
+            print('Your subtotal is: ',subtotal)
+            
+        elif select == 'E' or select =='e':
+            subtotal = subtotal + apple_slices
+            print('Your subtotal is: ',subtotal)
+            
+        elif select == 'F' or select =='f':
+            subtotal = subtotal + milk_shake
+            print('Your subtotal is: ',subtotal)
+        else:
+            print('Invalid entry. Please try again!')
+            continue
+            
+
+ #to exit the menu and print the final total!')
+
+    print('Your total is ',subtotal)
